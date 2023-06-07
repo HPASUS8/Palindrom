@@ -8,9 +8,10 @@ word = input('Привет! Напиши любое слово и узнай, я
 if word.lower() == 'хелп_п':
     print('Палиндром — число, буквосочетание, слово или текст, одинаково читающееся в обоих направлениях (для подробностей: https://ru.wikipedia.org/wiki/Палиндром).')
     
-if palindrome(word):
-    print(f'Твоё слово {word} - палиндром!')
-else:
-    print(f'Твоё слово {word} - не палиндром!')
+if word.lower() != 'хелп_п':   
+    if palindrome(word):
+        print(f'Твоё слово {word} - палиндром!')
+    else:
+        print(f'Твоё слово {word} - не палиндром!')
 
 
